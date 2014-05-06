@@ -45,11 +45,13 @@ def post_results(yay, nay, subreddit, counted_in):
 	sleep(2)
 
 def main():
-	running = True
-	while running:
-		inbox_check()
-		sleep(2)
-
+	try:
+		running = True
+		while running:
+			inbox_check()
+			sleep(2)
+	except:
+		sleep(20)
 
 Trying = True
 while Trying:

@@ -28,7 +28,7 @@ def inbox_check():
 
 def get_count(_url):
 	sub = r.get_submission(url = _url)
-	sub_comments = praw.helpers.flatten_tree(sub.comments)
+	sub_comments = sub.comments
 	yay = 0
 	nay = 0
 	for comment in sub_comments:
